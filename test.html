@@ -1,19 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inserção de Datas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .form-container input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-container button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
 <body>
 
-<h2>Talento Tech</h2>
+<div class="form-container">
+    <form action="/submit-dates" method="post">
+        <label for="start-date">Data de Início:</label>
+        <input type="date" id="start-date" name="start-date" required>
 
-<form>
-  <label for="fname">Primeiro nome:</label><br>
-  <input type="text" id="fname" name="fname" value="Helen"><br>
-  <label for="lname">Último nome:</label><br>
-  <input type="text" id="lname" name="lname" value="Silva">
-</form>
+        <label for="end-date">Data Final:</label>
+        <input type="date" id="end-date" name="end-date" required>
 
-<p>Formulário para nome e sobrenome.</p>
-
-<p>Colocar apenas um nome e um sobrenome.</p>
+        <button type="submit">Enviar</button>
+    </form>
+</div>
 
 </body>
 </html>
