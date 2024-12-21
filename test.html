@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Formulário de Inserção de Datas</title>
     <style>
         body {
@@ -43,9 +43,9 @@
     </style>
 </head>
 <body>
-
-<div class="form-container">
-    <form action="/submit-dates" method="post">
+<form action="index.html">
+<div class="form-container" role="form">
+    <form action="/process-dates" method="post">
         <label for="start-date">Data de Início:</label>
         <input type="date" id="start-date" name="start-date" required>
 
@@ -55,6 +55,8 @@
         <button type="submit">Enviar</button>
     </form>
 </div>
-
+  
+</form>
+  
 </body>
 </html>
